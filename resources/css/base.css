@@ -1,0 +1,30 @@
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+#user-input {
+    border-style: none;
+    resize: none;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+    vertical-align: text-top;
+}
+
+.right-container {
+    background-color: #FFFFFF;
+    border-radius: 32px;
+}
+
+
