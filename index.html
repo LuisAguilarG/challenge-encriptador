@@ -8,38 +8,34 @@
     <link rel="stylesheet" href="./resources/css/reset.css">
     <link rel="stylesheet" href="./resources/css/base.css">
     <link rel="stylesheet" href="./resources/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Encriptador</title>
 </head>
 <body>
-    <!-- Primero desarrollar mobile -->
     <main>
         <section class="left-container">
-            <header>
-                <img src="./resources/favicon/favicon.ico" alt="padlock icon">
-            </header>
-
-            <textarea name="user-input" id="user-input" cols="30" rows="10">Ingrese el texto aquí</textarea>
-
-            <div id="send-input">
-                <p>&#10071 Solo letras minúsculas y sin acentos</p>
-                <button>Encriptar</button>
-                <button>Desencriptar</button>
+            <div id="user-input">
+                <img id="favicon" src="./resources/favicon/favicon.ico" alt="padlock icon">
+                <textarea name="text-input" id="text-input">Ingrese el texto aquí</textarea>
+                <div id="send-input">
+                    <p><i class="material-icons">info</i> Solo letras minúsculas y sin acentos</p>
+                    <button>Encriptar</button>
+                    <button>Desencriptar</button>
+                </div>
             </div>
         </section>
 
         <section class="right-container">
-            <img src="./resources/img/missing-data-scale.svg" alt="missing data">
-            <p>Ningún mensaje fue encontrado</p>
-            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            <div id="system-output">
+                <img id="missing-data" class="hidden" src="./resources/img/missing-data-scale.svg" alt="missing data">
+                <p id="message-output-1">Ningún mensaje fue encontrado Ningún mensaje fue encontrado Ningún mensaje fue encontrado</p>
+                <p id="message-output-2">Ingresa el texto que desees encriptar o desencriptar. Ingresa el texto que desees encriptar o desencriptar. Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
         </section>
+
+        <footer>
+            <p>&copy Luis Aguilar - 2022</p>
+        </footer>
     </main>
-    
-    <footer>
-        <img src="" alt="">
-        <p>&copy Luis Aguilar - 2022</p>
-    </footer>
-
-    <script src=""></script>
 </body>
-
 </html>

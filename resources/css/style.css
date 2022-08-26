@@ -1,6 +1,84 @@
 
 @media screen and (max-width: 767px) { 
+
+    main {
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .left-container, .right-container {
+        width: 90vw;
+        margin: 1rem auto;
+    }
+
+    /* -- Left container -- */
+    #user-input {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #user-input * {
+        margin: 0 auto;
+    }
+
+    #text-input {
+        font-size: 2rem;
+    }
+
+    #send-input {
+        margin: 0 0;
+    }
+
+    #send-input p {
+        margin: 10px 0px 10px;
+        font-size: .7rem;
+        color: #545454;
+    }
+
+    .material-icons {
+        vertical-align: middle;
+    }
+
+    #send-input button {
+        margin: 0 0 15px;
+        width: 100%;
+        padding: 15px;
+    }
+
+    #send-input button:last-child {
+        background-color: #FFFFFF;
+        color: #e84c3d;
+    }
+
+    #favicon {
+        margin: 0 0 5vh;
+        display: block;
+        width: 50px;
+    }
+
+    #user-input {
+        width: 100%;
+    }
+
+    /* -- Right container -- */
+    .right-container {
+        min-height: auto;
+        margin-bottom: 30px;
+    }
+
+    #system-output {
+        padding: 20px 10px;
+    }
+
+    #missing-data {
+        width: 70%;
+        height: auto;
+    }
     
+    #message-output-1 {
+        font-size: 1.5rem;
+    }
 }
 
 
