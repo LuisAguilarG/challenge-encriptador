@@ -2,9 +2,14 @@
 @media screen and (max-width: 767px) { 
 
     main {
+        width: 100vw;
         height: 100vh;
         flex-direction: column;
         justify-content: space-between;
+    }
+
+    #input-alert {
+        
     }
 
     .left-container, .right-container {
@@ -63,7 +68,6 @@
 
     /* -- Right container -- */
     .right-container {
-        min-height: auto;
         margin-bottom: 30px;
     }
 
@@ -78,6 +82,39 @@
     
     #message-output-1 {
         font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    #message-output-2 {
+        font-size: 0.8rem;
+    }
+
+    #message-output-3 {
+        font-size: 1.5rem;
+    }
+
+    #clipboard-button {
+        display: inline-block;
+        border-color: #e84c3d;
+        border-radius: 20px;
+        margin: 15px 0 15px;
+        width: 100%;
+        padding: 15px;
+        background-color: #FFFFFF;
+        color: #e84c3d;
+    }
+
+    footer {
+        height: 10vh;
+    }
+
+    #profile-picture {
+        /* width: 10vw; */
+        height: 60%;
+        margin-right: 5px;
+        background-size:cover;
+        background-position:center;
+        border-radius:50%;
     }
 }
 

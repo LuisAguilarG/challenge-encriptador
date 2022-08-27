@@ -13,14 +13,16 @@
 </head>
 <body>
     <main>
+        
+
         <section class="left-container">
             <div id="user-input">
                 <img id="favicon" src="./resources/favicon/favicon.ico" alt="padlock icon">
-                <textarea name="text-input" id="text-input">Ingrese el texto aquí</textarea>
+                <textarea name="text-input" id="text-input" placeholder="Ingrese el texto aquí" autofocus></textarea>
                 <div id="send-input">
                     <p><i class="material-icons">info</i> Solo letras minúsculas y sin acentos</p>
-                    <button>Encriptar</button>
-                    <button>Desencriptar</button>
+                    <button id="encrypt-button">Encriptar</button>
+                    <button id="decrypt-button">Desencriptar</button>
                 </div>
             </div>
         </section>
@@ -28,14 +30,17 @@
         <section class="right-container">
             <div id="system-output">
                 <img id="missing-data" class="hidden" src="./resources/img/missing-data-scale.svg" alt="missing data">
-                <p id="message-output-1">Ningún mensaje fue encontrado Ningún mensaje fue encontrado Ningún mensaje fue encontrado</p>
-                <p id="message-output-2">Ingresa el texto que desees encriptar o desencriptar. Ingresa el texto que desees encriptar o desencriptar. Ingresa el texto que desees encriptar o desencriptar.</p>
+                <p id="message-output-1">Ningún mensaje fue encontrado</p>
+                <p id="message-output-2">Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
         </section>
 
         <footer>
+            <img id="profile-picture" src="./resources/img/profile.png" alt="profile picture">
             <p>&copy Luis Aguilar - 2022</p>
         </footer>
     </main>
+    
+    <script src="./resources/js/main-functions.js"></script>
 </body>
 </html>

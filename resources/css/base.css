@@ -23,6 +23,7 @@ main {
 /* -- Left container -- */
 #text-input {
     border-style: none;
+    outline: none;
     resize: none;
     width: 100%;
     min-height: 20vh;
@@ -72,6 +73,10 @@ main {
     color: #545454;
 }
 
+#message-output-3 {
+    text-align: center;
+    color: #545454;
+}
 
 footer {
     display: flex;
@@ -83,6 +88,10 @@ footer {
     color: #FFFFFF;
     width: 100vw;
     height: 2rem;
-    padding: 2rem 0;
+    /* padding: 2rem 0; */
     background-color: #e84c3d;
+}
+
+#profile-picture {
+
 }
