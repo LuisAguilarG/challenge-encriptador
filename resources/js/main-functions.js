@@ -2,8 +2,10 @@ let $text_input = document.querySelector("#text-input");
 let $encrypt_button = document.querySelector("#encrypt-button");
 let $decrypt_button = document.querySelector("#decrypt-button");
 let $system_output = document.querySelector("#system-output");
+let $input_alert = document.querySelector("#input-alert");
+let $close_alert = document.querySelector("#close-alert");
 
-
+$close_alert.addEventListener("click", hideAlert);
 $encrypt_button.addEventListener("click", encrypt);
 $decrypt_button.addEventListener("click", decrypt);
 
@@ -86,7 +88,11 @@ function decrypt() {
 }
 
 function showAlert() {
-    
+    $input_alert.style.display = "flex"; 
+}
+
+function hideAlert() {
+    $input_alert.style.display = "none"; 
 }
 
 function generateOutput(content) {

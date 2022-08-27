@@ -2,14 +2,8 @@
 @media screen and (max-width: 767px) { 
 
     main {
-        width: 100vw;
-        height: 100vh;
         flex-direction: column;
-        justify-content: space-between;
-    }
-
-    #input-alert {
-        
+        justify-content: flex-start;
     }
 
     .left-container, .right-container {
@@ -17,32 +11,27 @@
         margin: 1rem auto;
     }
 
-    /* -- Left container -- */
-    #user-input {
-        display: flex;
-        flex-direction: column;
+    .right-container {
+        margin-bottom: 4.5rem;
     }
 
-    #user-input * {
-        margin: 0 auto;
+    /* -- Left container -- */
+    #user-input {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #favicon {
+        margin: 0 0 5vh;
     }
 
     #text-input {
+        min-height: 20vh;
         font-size: 2rem;
     }
 
-    #send-input {
-        margin: 0 0;
-    }
-
     #send-input p {
-        margin: 10px 0px 10px;
         font-size: .7rem;
-        color: #545454;
-    }
-
-    .material-icons {
-        vertical-align: middle;
     }
 
     #send-input button {
@@ -51,34 +40,8 @@
         padding: 15px;
     }
 
-    #send-input button:last-child {
-        background-color: #FFFFFF;
-        color: #e84c3d;
-    }
-
-    #favicon {
-        margin: 0 0 5vh;
-        display: block;
-        width: 50px;
-    }
-
-    #user-input {
-        width: 100%;
-    }
 
     /* -- Right container -- */
-    .right-container {
-        margin-bottom: 30px;
-    }
-
-    #system-output {
-        padding: 20px 10px;
-    }
-
-    #missing-data {
-        width: 70%;
-        height: auto;
-    }
     
     #message-output-1 {
         font-size: 1.5rem;
@@ -94,35 +57,182 @@
     }
 
     #clipboard-button {
-        display: inline-block;
-        border-color: #e84c3d;
-        border-radius: 20px;
         margin: 15px 0 15px;
         width: 100%;
         padding: 15px;
-        background-color: #FFFFFF;
-        color: #e84c3d;
-    }
-
-    footer {
-        height: 10vh;
-    }
-
-    #profile-picture {
-        /* width: 10vw; */
-        height: 60%;
-        margin-right: 5px;
-        background-size:cover;
-        background-position:center;
-        border-radius:50%;
     }
 }
-
 
 @media screen and (min-width: 768px) and (max-width:1023px) { 
+
+    main {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .left-container, .right-container {
+        width: 90vw;
+        margin: 1rem auto;
+    }
+
+    .right-container {
+        margin-bottom: 4.5rem;
+    }
+
+    /* -- Left container -- */
+    #user-input {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #favicon {
+        margin: 0 0 5vh;
+    }
+
+    #text-input {
+        min-height: 20vh;
+        font-size: 2rem;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #send-input p {
+        font-size: .7rem;
+    }
+
+    #send-input button {
+        margin: 0 0 15px;
+        width: 48%;
+        padding: 15px;
+    }
+
+    /* -- Right container -- */
     
+    #message-output-1 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    #message-output-2 {
+        font-size: 0.8rem;
+    }
+
+    #message-output-3 {
+        font-size: 1.5rem;
+    }
+
+    #clipboard-button {
+        margin: 15px 0 15px;
+        width: 100%;
+        padding: 15px;
+    }
 }
 
-@media screen and (min-width: 1024px){
+
+@media screen and (min-width: 1024px) { 
+
+    main {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .left-container {
+        width: 50%;
+        margin: 1rem auto;
+    }
+
+    .right-container {
+        width: 30%;
+        margin: 1rem auto 4.5rem;
+    }
+
+    /* -- Left container -- */
+    #user-input {
+        flex-direction: column;
+        width: 100%;
+        height: 80vh;
+    }
+
+    #favicon {
+        margin: 0 0 5vh;
+    }
+
+    #text-input {
+        padding-left: 100px;
+        min-height: 20vh;
+        font-size: 2rem;
+        flex-grow: 1;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #send-input {
+        padding-left: 100px;
+    }
     
+    #send-input p {
+        font-size: .7rem;
+    }
+
+    #send-input button {
+        margin: 0 0 15px;
+        width: 48%;
+        padding: 15px;
+    }
+
+    /* -- Right container -- */
+    
+    .right-container {
+        max-height: 85vh;
+        overflow: scroll; /* temporal */
+        padding-top: 15px; /* temporal */
+        padding-bottom: 80px;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;
+    }
+
+    .right-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    #system-output {
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+
+    #missing-data {
+        width: 70%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    #message-output-1 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    #message-output-2 {
+        font-size: 0.8rem;
+        text-align: start;
+        margin-left: 20px;
+    }
+
+    #message-output-3 {
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+
+    #clipboard-button {
+        margin: 15px 0 15px;
+        width: 100%;
+        padding: 15px;
+    }
 }
+

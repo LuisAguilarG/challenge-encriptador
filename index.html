@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es-ES">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,18 +12,28 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Encriptador</title>
 </head>
-<body>
-    <main>
-        
 
+<body>
+    <div id="input-alert">
+        <div class="content">
+            <div class="content-text">
+                <p>Error</p> El campo no puede estar vacío ni contener mayúsculas, caracteres especiales o números.</a>
+            </div>
+            <i id="close-alert" class="material-icons"><a href="#">close</a></i>
+        </div>
+    </div>
+
+    <main>
         <section class="left-container">
             <div id="user-input">
                 <img id="favicon" src="./resources/favicon/favicon.ico" alt="padlock icon">
                 <textarea name="text-input" id="text-input" placeholder="Ingrese el texto aquí" autofocus></textarea>
                 <div id="send-input">
                     <p><i class="material-icons">info</i> Solo letras minúsculas y sin acentos</p>
-                    <button id="encrypt-button">Encriptar</button>
-                    <button id="decrypt-button">Desencriptar</button>
+                    <div class="buttons">
+                        <button id="encrypt-button">Encriptar</button>
+                        <button id="decrypt-button">Desencriptar</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -40,7 +51,7 @@
             <p>&copy Luis Aguilar - 2022</p>
         </footer>
     </main>
-    
     <script src="./resources/js/main-functions.js"></script>
 </body>
+
 </html>
